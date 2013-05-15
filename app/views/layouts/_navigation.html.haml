@@ -1,0 +1,15 @@
+.navbar.navbar-inverse
+  .navbar-inner
+    .container
+      %a.brand YourFeed
+      .nav-collapse.collapse
+        %ul.nav
+          %li
+            = link_to 'Home', root_path
+          %li
+            = link_to 'Feeds', feeds_path
+          %li
+            - if user_signed_in?
+              %a Hi, #{current_user.name}
+            - else
+              = link_to "Login with Twitter", new_user_session_path
