@@ -1,11 +1,11 @@
 %h1
   = @feed.name
   = "(+#{@new_count})"
-%ul.unstyled
+%ul.stories.unstyled
   - @stories.each do |story|
-    %li.well.span4
+    %li.well.span4{id: "story_#{story.id}"}
       %h4= link_to(story.title, feed_story_path(@feed, story)) if story.url.present?
-      = image_tag story.cover_url if story.cover_url.present? 
+      = image_tag story.cover_url, style: ("display:none" unless story.cover_url.present?)
       %p= story.announce
       %span.label
         = image_tag story.avatar_url, width: 30

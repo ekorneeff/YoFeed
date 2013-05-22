@@ -10,8 +10,10 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
-//= require jquery
+//= require jquery/jquery
 //= require jquery_ujs
+//= require imagesloaded/jquery.imagesloaded
+//= require jquery-masonry/jquery.masonry
 //= require bootstrap
-//= require turbolinks
+//= require feeds
 //= require_tree .

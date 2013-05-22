@@ -7,7 +7,8 @@ class Story < ActiveRecord::Base
       transition :got_from_feed => :full_loaded
     end
     after_transition any => :full_loaded do |entry, transition|
-      Pusher.trigger('stories', 'story_updated', entry.to_json)
+      # PrivatePub.publish_to("/stories/updated", entry: {id: entry.id, title: entry.title, cover_url: entry.cover_url})
+      Pusher.trigger('stories', 'updated', {id: entry.id, title: entry.title, cover_url: entry.cover_url})
     end
   end
 end
