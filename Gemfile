@@ -26,6 +26,8 @@ gem 'omniauth-twitter'
 gem 'jquery-rails'
 gem 'simple_form', '~> 3.0.rc'
 gem 'bootstrap-sass', github: "thomas-mcdonald/bootstrap-sass"
+gem "bower-rails", github: "rharriso/bower-rails"
+
 
 gem 'sidekiq'
 gem "ruby-readability", :require => 'readability'
@@ -33,14 +35,14 @@ gem 'fastimage'
 
 gem 'state_machine'
 gem 'pusher'
-gem 'private_pub'
+# gem 'private_pub'
 gem 'thin'
 
 gem 'twitter'
 gem 'vk-ruby', "~> 0.9.3"
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+# gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.0.1'
