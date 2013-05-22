@@ -31,6 +31,7 @@ class FeedParser::TwitterParser
     feed.map do |entry|
       attrs = {
         author: entry.user.screen_name,
+        avatar_url: entry.profile_image_url,
         announce: entry.text,
         time_marker: entry.id
       }
