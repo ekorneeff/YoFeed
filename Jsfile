@@ -1,0 +1,6 @@
+assets_path "assets"
+
+group :vendor do
+  js "imagesloaded"
+  js "jquery-masonry"
+end
