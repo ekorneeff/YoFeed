@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "imagesloaded": "latest",
+    "jquery-masonry": "latest"
+  }
+}
